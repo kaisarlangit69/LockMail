@@ -66,7 +66,7 @@ class Enkripsi(ttk.Frame):
                 
             else:
                 pesan = enkripsi_vigenere(teks, kunci)
-                if dialogs.Messagebox.yesno(pesan, "Salin ke clipboard?") == "yes":
+                if dialogs.Messagebox.yesno(pesan, "Salin ke clipboard?") == "YES":
                     copy_text(pesan)
                     dialogs.Messagebox.show_info("Pesan telah disalin.")
                 print("Enkripsi:", pesan)
@@ -91,7 +91,7 @@ class Dekripsi(Enkripsi):
             else:
                 pesan = dekripsi_vigenere(teks, kunci)
                 
-                if dialogs.Messagebox.yesno(pesan, "Salin ke clipboard?") == "yes":
+                if dialogs.Messagebox.yesno(pesan, "Salin ke clipboard?") == "YES":
                     copy_text(pesan)
                     dialogs.Messagebox.show_info("Pesan telah disalin.")
                 print("Dekripsi:", pesan)
